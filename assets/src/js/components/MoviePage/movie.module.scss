@@ -1,0 +1,58 @@
+@import './../../../scss/utilities';
+@import './../../../scss/event';
+@import './../../../scss/mobile';
+
+#movie{
+    header{
+        height: 300px;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .info{
+        table{
+            width: 100%;
+            thead{
+                font-size: 1.5em;
+                font-family: 'Josefin Slab';
+            }
+            tr{
+                font-size: 1.6em;
+                font-family: 'Proxima Nova';
+
+                .inner{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr;
+                    td{
+                        display: flex;
+                        align-items: center;
+                        a{
+                            height: 45px;
+                            svg{
+                            width: 45px;
+                            height: 45px;
+                            }  
+                        }  
+                    }
+                }
+            }
+        }
+    }
+
+    .tags{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0;
+        li{
+            border: 1px solid black;
+            margin: 0 0.5rem;
+            padding: 0.5rem;
+            border-radius: 50px;
+            background: lightgray;
+            a{
+                color: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "title": "African Giant Tour",
+            "price": "7500"
+        },
+        {
+            "title": "Heavy Is The Head Tour ",
+            "price": "10000"
+        },
+        {
+            "title": "Starboy Festival",
+            "price": "10000"
+        },
+        {
+            "title": "Art X Lagos",
+            "price": "5000"
+        },
+        {
+            "title": "Lagos Fashion Week",
+            "price": "5000"
+        },
+        {
+            "title": "The Palmwine Festival",
+            "price": "10000"
+        }
+    ]
+}

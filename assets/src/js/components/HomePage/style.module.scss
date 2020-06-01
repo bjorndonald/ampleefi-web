@@ -1,0 +1,46 @@
+@import './../../../scss/utilities';
+@import './../../../scss/event';
+// CSS syntax include here only pertains to the home page
+#home{
+   .content{
+       .section-title{
+           margin-left: 4rem;
+           margin-bottom: 1rem;
+           margin-top: 1rem;
+           font-size: 32px;
+           font-weight: normal;
+           font-family: 'proxima_novaregular';
+       }
+
+       .container{
+            max-width: 98vw;
+
+            .bottom{
+                padding: 1rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                a{
+                    font-size: small;
+                    font-family: 'proxima_novaregular';
+                    padding: 0.5rem 1.25rem;
+                    border-radius: 5px;
+                }
+            }
+       }
+       .container:last-child{
+           margin-bottom: 3rem;
+       }
+   } 
+
+   .top-filter{
+        .container{
+            
+            .left{
+                padding-left: 14.5%;
+            }
+        }
+    }
+}
+
+@import './../../../scss/mobile';

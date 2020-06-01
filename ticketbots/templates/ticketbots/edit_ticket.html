@@ -1,0 +1,18 @@
+{% extends 'ticketbots/base.html' %}
+{% load bootstrap3 %}
+{% block header %}
+	<h2>Edit ticket:</h2>
+{% endblock header %}
+
+{% block content %}
+	<h3><a href="{% url 'ticketbots:ticket' ticket.id %}">{{ticket}}</a></h3>
+	<form action="{% url 'ticketbots:edit_ticket' ticket.id %}" method='post'>
+		{% csrf_token %}
+		{% bootstrap_form form %}
+		{% buttons %}
+			<button type="submit" class="btn btn-primary">
+			{% bootstrap_icon "check" %} save changes
+			</button>
+		{% endbuttons %}
+	</form>
+{% endblock content %}

@@ -1,0 +1,164 @@
+@import './../../../scss/utilities';
+@import './../../../scss/event';
+@import './../../../scss/mobile';
+
+#event{
+    header{
+        height: 234px;
+        background-size: 50%;
+        background-position: top;
+        position: relative;
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: 0.6);
+        }
+    }
+
+    .info{
+        .wrapper{
+            width: 1080px;
+            max-width: 1080px;
+        }
+        .table{
+            width: 100%;
+            .headers{
+                display: grid;
+                grid-template-columns: 2fr 5fr;
+                h1:last-child{
+                    font-size: 19px;
+                    font-family: 'josefin_slabregular';
+                    text-align: center;
+                }
+                h1:first-child{
+                    font-family: 'cormorant_garamondregular';
+                    font-size: 19px;
+                    text-align: center;
+                }
+            }
+            .body{
+                .row{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.6em;
+                    font-family: 'proxima_novaregular';
+                    
+                    .name{
+                         display: flex;
+                         align-items: center;
+                         font-family: 'proxima_novaregular';
+                         font-size: 14px;
+                         width: 30%;
+                    }
+
+                    .inner{
+                        display: flex;
+                         align-items: center;
+                         justify-content: space-between;
+                        width: 60%;
+
+                        .time{
+                            width: 20%;
+                        }
+
+                        .address{
+                            width: 37%;
+                        }
+
+                        .provider-icon{
+                            width: 6%;
+                            a{
+                                display: flex;
+                                align-items: center;
+                            }
+                            img{
+                                height: 70%;
+                            }
+                        }
+                        
+                        li{
+                            flex-direction: column;
+                            margin-left: 0.5rem;
+
+                            p:last-child{
+                                font-weight: bold;
+                            }
+                        }
+
+                        .ticket-options{
+                            width: 37%;
+                            ul{
+                                flex-direction: row;
+                                li{
+                                    display: inline-block;
+                                }
+                            }
+                        }
+
+                        p{
+                            display: flex;
+                            align-items: center;
+                            font-family: 'proxima_novaregular';
+                            font-size: 14px;
+                                a{
+                                    height: 45px;
+                                svg{
+                                    width: 45px;
+                                    height: 45px;
+                                }  
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .tags{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0;
+        li{
+            //background: #222;
+            padding: 0;
+            -webkit-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.1);
+            box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.1);
+            a{
+                color: #888;
+            }
+            
+            display: inline-block;
+            padding: 9px 5px;
+            font-family: 'LuloCleanW01-One';
+            font-size: 7px;
+            font-weight: bold;
+            margin: 3px;
+            border-radius: 6px;
+
+            &:hover{
+                cursor: pointer;
+                a{
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .wrapper.map-content{
+        height: 50vh;
+        .map{
+            height: 50vh;
+
+            div{
+                height: 50vh;
+            }
+        }
+    }
+}

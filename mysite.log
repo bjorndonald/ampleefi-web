@@ -1,0 +1,210 @@
+[02/Dec/2019 12:54:48] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\templatetags\webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 47, in get_as_tags
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 17, in _filter_by_extension
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 46, in filter_chunks
+    chunk['url'] = self.get_chunk_url(chunk)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 57, in get_chunk_url
+    return staticfiles_storage.url(relpath)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'dist/main-23346d8edc7b5e7c6ef2.js'
+[02/Dec/2019 12:54:48] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[02/Dec/2019 12:55:20] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\templatetags\webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 47, in get_as_tags
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 17, in _filter_by_extension
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 46, in filter_chunks
+    chunk['url'] = self.get_chunk_url(chunk)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 57, in get_chunk_url
+    return staticfiles_storage.url(relpath)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'dist/main-23346d8edc7b5e7c6ef2.js'
+[02/Dec/2019 12:55:20] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[02/Dec/2019 12:56:00] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\templatetags\webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 47, in get_as_tags
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 17, in _filter_by_extension
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 46, in filter_chunks
+    chunk['url'] = self.get_chunk_url(chunk)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 57, in get_chunk_url
+    return staticfiles_storage.url(relpath)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'dist/main-23346d8edc7b5e7c6ef2.js'
+[02/Dec/2019 12:56:00] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[02/Dec/2019 12:56:47] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\templatetags\webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 47, in get_as_tags
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 17, in _filter_by_extension
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 46, in filter_chunks
+    chunk['url'] = self.get_chunk_url(chunk)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 57, in get_chunk_url
+    return staticfiles_storage.url(relpath)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'dist/main-23346d8edc7b5e7c6ef2.js'
+[02/Dec/2019 12:56:47] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[21/Dec/2019 16:43:08] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Program Files\Python37\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Program Files\Python37\lib\site-packages\django\template\library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\templatetags\webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 47, in get_as_tags
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\utils.py", line 17, in _filter_by_extension
+    for chunk in bundle:
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 46, in filter_chunks
+    chunk['url'] = self.get_chunk_url(chunk)
+  File "C:\Program Files\Python37\lib\site-packages\webpack_loader\loader.py", line 57, in get_chunk_url
+    return staticfiles_storage.url(relpath)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Program Files\Python37\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'dist/main-ff805ad713ae94b26138.js'
+[21/Dec/2019 16:43:08] ERROR [django.server:154] "GET / HTTP/1.1" 500 27

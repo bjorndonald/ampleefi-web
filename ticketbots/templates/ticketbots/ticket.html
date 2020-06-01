@@ -1,0 +1,45 @@
+{% extends 'ticketbots/base.html' %}
+{% block header %}
+	<h2>Ticket Table for {{ticket}}</h2>
+{% endblock header %}
+
+{% block content %}
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<table border = "1" width="100%">
+	<caption><strong>Ticket Table</strong></caption>
+	<thead>
+			<tr>
+				<th>Event Name</th>
+				<th>Day</th>
+				<th>Month</th>
+				<th>Year</th>
+				<th>Time</th>
+				<th>Phone Number</th>
+				<th>Artiste</th>
+				<th>Venue</th>
+				<th>Price</th>
+				<th>Summary</th>
+				<th>Scrape Link</th>
+			</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>{{ticket}}</td>
+			<td>{{ticket.day}}</td>
+			<td>{{ticket.month}}</td>
+			<td>{{ticket.year}}</td>
+			<td>{{ticket.time}}</td>
+			<td>{{ticket.phone_num}}</td>
+			<td>{{ticket.artiste}}</td>
+			<td>{{ticket.venue}}</td>
+			<td>{{ticket.price}}</td>
+			<td>{{ticket.summary}}</td>
+			<td>{{ticket.scrape_link}}</td>
+		</tr>
+	</tbody>
+	</table>
+<p align="center">
+	<a href="{% url 'ticketbots:edit_ticket' ticket.id %}">edit ticket</a>
+</p>
+{% endblock content %}

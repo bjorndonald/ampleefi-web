@@ -1,0 +1,259 @@
+$max-width: 1260px;
+
+$primary-color: rgb(255, 206, 44);
+
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+    margin: 0 5px;
+}
+
+@font-face {
+    font-family: 'Proxima_N_W01_Reg';
+    src:
+         url('/static/src/fonts/Proxima_N_W01_Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_altthin';
+    src:
+         url('/static/src/fonts/proxima_nova_alt_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novablack';
+    src:
+         url('/static/src/fonts/proxima_nova_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novabold';
+    src:
+         url('/static/src/fonts/proxima_nova_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: 
+         url('/static/src/fonts/proxima_nova_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novathin';
+    src:
+         url('/static/src/fonts/proxima_nova_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    src:
+         url('/static/src/fonts/AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LuloCleanW01-One';
+    src:
+         url('/static/src/fonts/LuloCleanW01-One.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LuloCleanW01-OneBold';
+    src:
+         url('/static/src/fonts/LuloCleanW01-OneBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SohoW04-ThinCondensed';
+    src:
+         url('/static/src/fonts/SohoW04-ThinCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src:
+         url('/static/src/fonts/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// // @font-face {
+// //     font-family: 'cormorant_garamondbold';
+// //     src: 
+// //          url('./static/src/fonts/cormorantgaramond-bold-webfont.woff') format('woff');
+// //     font-weight: normal;
+// //     font-style: normal;
+
+// // }
+
+
+
+
+// // @font-face {
+// //     font-family: 'cormorant_garamondlight';
+// //     src: 
+// //          url('./static/src/fonts/cormorantgaramond-light-webfont.woff') format('woff');
+// //     font-weight: normal;
+// //     font-style: normal;
+
+// // }
+
+
+
+
+@font-face {
+    font-family: 'cormorant_garamondmedium';
+    src: 
+         url('/static/src/fonts/cormorantgaramond-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cormorant_garamondregular';
+    src: 
+         url('/static/src/fonts/cormorantgaramond-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cormorant_garamondsemibold';
+    src: 
+         url('/static/src/fonts/cormorantgaramond-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+// // @font-face {
+// //     font-family: 'josefin_slabbold';
+// //     src:
+// //          url('./static/src/fonts/josefinslab-bold-webfont.woff') format('woff');
+// //     font-weight: normal;
+// //     font-style: normal;
+
+// // }
+
+
+
+
+// // @font-face {
+// //     font-family: 'josefin_slablight';
+// //     src:
+// //          url('./static/src/fonts/josefinslab-light-webfont.woff') format('woff');
+// //     font-weight: normal;
+// //     font-style: normal;
+
+// // }
+
+
+
+
+@font-face {
+    font-family: 'josefin_slabregular';
+    src:
+         url('/static/src/fonts/josefinslab-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+// // @font-face {
+// //     font-family: 'josefin_slabsemibold';
+// //     src: 
+// //          url('./static/src/fonts/josefinslab-semibold-webfont.woff') format('woff');
+// //     font-weight: normal;
+// //     font-style: normal;
+
+// // }
+
+
+
+
+// // @font-face {
+// //     font-family: 'josefin_slabthin';
+// //     src:
+// //          url('./static/src/fonts/josefinslab-thin-webfont.woff') format('woff');
+// //     font-weight: normal;
+// //     font-style: normal;
+
+// // }
+
+
+
+
+// // @font-face {
+// //     font-family: 'proxima_nova_altbold';
+// //     src: 
+// //          url('./static/src/fonts/proxima_nova_alt_bold-webfont.woff') format('woff');
+// //     font-weight: normal;
+// //     font-style: normal;
+
+// // }
+
+
+
+
+@font-face {
+    font-family: 'proxima_nova_altlight';
+    src: 
+         url('/static/src/fonts/proxima_nova_alt_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,42 @@
+{% extends "ticketbots/base.html" %}
+{% block header %}
+	<h2>Collated Ticket data</h2>
+{% endblock header %}
+
+{% block content %}
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<table border="3" width="100%">
+		<thead>
+			<tr>
+				<th>Event Name</th>
+				<th>Day</th>
+				<th>Month</th>
+				<th>Year</th>
+				<th>Time</th>
+				<th>Phone Number</th>
+				<th>Artiste</th>
+				<th>Venue</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for ticket in tickets %}
+			<tr>
+				<td><a href="{% url 'ticketbots:ticket' ticket.id %}">{{ticket}}</a></td>
+				<td>{{ticket.day}}</td>
+				<td>{{ticket.month}}</td>
+				<td>{{ticket.year}}</td>
+				<td>{{ticket.time}}</td>
+				<td>{{ticket.phone_num}}</td>
+				<td>{{ticket.artiste}}</td>
+				<td>{{ticket.venue}}</td>
+				<td>{{ticket.price}}</td>
+			</tr>
+			{% empty %}
+			<li>No tickets available</li>
+		{% endfor %}
+		</tbody>
+	</table>
+{% endblock content %}
+		

@@ -1,0 +1,90 @@
+@import './../../../scss/utilities';
+@import './../../../scss/event';
+@import './../../../scss/mobile';
+
+#account{
+    .wrapper.body{
+        display: flex; 
+        justify-content: space-between;
+        padding: 10vh 2rem 10vh 2rem;
+        
+        .left{
+            width: 30%;
+            .profile-pic{
+                width: 60%;
+                height: 20vh;
+                background: grey;
+                margin-bottom: 5rem;
+            }
+
+            .links{
+                border-radius: 10px;
+                border: 1px solid lightgray;
+
+                li{
+                    padding: 1rem;
+                    border-bottom: 1px solid lightgray;
+                    a{
+                        color: black;
+                        font-size: small;
+                    }
+                }
+                li:last-child{
+                    border: none;
+                }
+            }
+        }
+
+        .right{
+            width: 65%;
+
+            .title{
+                margin-bottom: 8vh;
+            }
+
+            .email-display{
+                margin-bottom: 3vh;
+            }
+
+            form{
+                padding: 5vh 0;
+                width: 100%;
+                .row{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    .form-group{
+                        width: 47.5%;
+                        margin-bottom: 1rem;
+                        label{
+                            display: block;
+                            margin-bottom: 0.5rem;
+                        }
+                        input{
+                            width: 97.1%;
+                            padding: 0.5rem 0 0.5rem 0.5rem;
+                        }
+                        small{
+                            color: #ccc;
+                        }
+                    }
+                }
+
+                .submit-buttons{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5vh;
+                    .btn{
+                        padding: 1rem 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: small;
+                        width: 47.5%;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

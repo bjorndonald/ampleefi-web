@@ -1,0 +1,1 @@
+web: gunicorn ticketbot_project.wsgi --log-file -

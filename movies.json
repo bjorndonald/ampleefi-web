@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "title":"Survival of Jelili",
+            "price": "3000"
+        },
+        {
+            "title":"Jumanji: The Next Level",
+            "price": "3000"
+        },
+        {
+            "title":"Sugar Rush",
+            "price": "3000"
+        },
+        {
+            "title":"Kipali",
+            "price": "2000"
+        },
+        {
+            "title":"Frozen II",
+            "price": "3000"
+        },
+        {
+            "title":"Muna",
+            "price": "2500"
+        }
+    ]
+}

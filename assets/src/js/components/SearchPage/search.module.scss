@@ -1,0 +1,293 @@
+@import './../../../scss/utilities';
+@import './../../../scss/event';
+@import './../../../scss/mobile';
+@import './../../../scss/slider';
+
+#search{
+    //background: #eee;
+    header{
+        height: 20vh;
+    }
+
+    nav{
+        .container{
+            padding-top: 0;
+            padding-bottom: 0px;
+        }
+        .nav-user{
+            display: flex;
+        }
+
+        .nav-login{
+            display: none;
+        }
+    }
+
+    .top-filter{
+        .filter-title{
+            display: none;
+        }
+
+        .wrapper{
+            margin: 0;
+        }
+        
+        .container{
+            .wrapper{
+                max-width: 1080px;
+                width: 1080px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                //padding-left: 21.5%;
+                .left{
+                    //padding-left: 14.5%;
+                }
+                .left{
+                    margin-left: -180px;
+                    li{
+                        margin-right: 17px;
+                        font-family: 'Lulo Clean W01 One';
+                        font-weight: bold;
+                        font-size: 0.8rem;
+                        label{
+                            color: rgba(153, 7, 121, 1);
+                            a{
+                                cursor: pointer;
+                                margin: 0;
+                            }
+                        }
+                        input{
+                            margin-right: 16px;
+                        }
+                    }
+                }
+                .right, .left{
+                    display: flex;
+                    span{
+                        margin-right: 1rem;
+                        
+                    }
+                    .dropdown{
+                        a{
+                            font-family: 'Lulo Clean W01 One';
+                            color: #888;
+                            font-weight: bold;
+                            font-size: 10px;
+                        }
+                        span{
+                            font-family: 'Lulo Clean W01 One';
+                            color: #888;
+                            font-weight: bold;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .title-div{
+                    width: 221px;
+                    h2{
+                        width: 221px;
+                        text-align: center;
+                        font-size: 10px;
+                        font-family: 'Lulo Clean W01 One';
+                        color: #858585;
+                    }
+                }
+                
+                ul{
+                    li{
+                        a{
+                            margin-right: 2rem;
+                            font-family: 'Lulo Clean W01 One';
+                            font-weight: bold;
+                            font-size: 12px;
+                            color: #999997;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content{
+        .container{
+            .wrapper{
+                //max-width: 98%;
+                max-width: 1080px;
+                width: 1080px;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                grid-gap: 5rem;
+        
+                section{
+                    padding: 0;
+                    p{
+                        margin: 0;
+                    }
+                }
+        
+                .section-header{
+                    padding-bottom: 1rem;
+                    //border-bottom: 1px solid #ccc;
+                }
+        
+                .filter-section{
+                    font-family: 'Proxima Nova';
+                    font-weight: bold;
+                    
+        
+                    .filter-header{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 2.5rem;
+                        .line{
+                            background: #ccc;
+                            height: 1px;
+                            width: 30%;
+                        }
+                    }
+                    .filter-title{
+                        margin-bottom: 0.5rem;
+                        font-family: 'Lulo Clean W01 One';
+                        font-size: 10px;
+                        color: #888;
+                    }
+        
+                    .filter{
+                        margin: 0.5rem 0;
+                    }
+                    .filter-content{
+                        padding: 0rem 0 0.5rem 0;
+                        .dropdown{
+                            font-family: 'Lulo Clean W01 One';
+                            color: #999997;
+                            font-weight: bold;
+                            font-size: 10px;
+                            a{
+                                font-family: 'Lulo Clean W01 One';
+                                color: #999997;
+                                font-weight: bold;
+                                font-size: 10px;
+                            }
+                            span{
+                                font-family: 'Lulo Clean W01 One';
+                                color: #999997;
+                                font-weight: bold;
+                                font-size: 10px;
+                            }
+                            ul{
+                                ul{
+                                    li{
+                                        padding: 7.5px 5px; 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .price{
+                        .input-range{
+                            margin: 1.5rem 0;
+                        }
+                        .bottom{
+                            margin-top: 1rem;
+                            display: flex;
+                            justify-content: space-between;
+        
+                            input{
+                                width: 40%;
+                                border-radius: 5px;
+                                border: 1px solid #222;
+                            }
+                        }
+                    }
+        
+                    .date{
+                        // .dropdown{
+                        //     width: 100%;
+                        //     ul{
+                        //         width: 100%;
+                        //         li{
+                        //             width: 100%;
+                        //             ul{
+                        //                 width: 102%;
+                        //             }
+                        //         }
+                        //     }
+                        // }
+                    }
+        
+                    .artist{
+                        margin-bottom: 0.5rem;
+                        // .dropdown{
+                        //     width: 100%;
+                        //     ul{
+                        //         width: 100%;
+                        //         li{
+                        //             width: 100%;
+                        //             ul{
+                        //                 width: 102%;
+                        //             }
+                        //         }
+                        //     }
+                        // }
+                    }
+        
+                    label{
+                        font-size: 9pt;
+                    }
+        
+                    .event-tags{
+                        ul{
+                            li{
+                                //background: #222;
+                                padding: 0;
+                                -webkit-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.1);
+                                -moz-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.1);
+                                box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.1);
+                                color: #888;
+                                display: inline-block;
+                                padding: 9px 5px;
+                                font-family: 'Lulo Clean W01 One';
+                                font-size: 7px;
+                                font-weight: bold;
+                                margin: 3px;
+                                border-radius: 6px;
+                            }
+                        }
+                    }
+                }
+        
+                .events-section{
+                    padding-top: 1rem;
+                    .events-header{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 1rem;
+        
+                        .right{
+                            select{
+        
+                            }
+                        }
+                    }
+        
+                    .basic-events{
+                        padding: 0 0.2rem;
+                        margin: 1rem 0;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-gap: 0.5rem;
+                    }
+
+                    .bottom{
+                        display: flex;
+                        padding: 1rem 0;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

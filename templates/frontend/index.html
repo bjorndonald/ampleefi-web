@@ -1,0 +1,17 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AmpleeFi</title>
+    <link rel="shortcut icon" href="/static/src/img/ampleeFi_color_logo.png" type="image/x-icon">
+    <!-- Webpack rendered CSS -->
+    {% render_bundle 'main' 'css' %}
+</head>
+<body>
+    <div id="react-app"></div>
+    <!-- Webpack rendered JS -->
+    {% render_bundle 'main' 'js' %}
+</body>
+</html>
